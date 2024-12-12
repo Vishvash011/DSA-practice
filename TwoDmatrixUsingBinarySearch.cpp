@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int binarySearch(int arr[][4] , int rows , int cols , int target)
+bool binarySearch(int arr[][4] , int rows , int cols , int target)
 {
     int start = 0;
     int end = rows * cols - 1;

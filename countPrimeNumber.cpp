@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std; 
 int main() {
-    int i,n;
+    int n;
     int count = 0;
     cout<<"Enter the value of n for the range: ";
     cin>>n;

@@ -12,14 +12,10 @@ int findPeakElement(vector<int>arr , int size)
         {
             start = mid + 1;
         }
-        else // if(arr[mid] > arr[mid+1])
+        else 
         {
             end = mid;
         }
-        // else if(arr[mid] > arr[mid-1] && arr[mid] >= arr[mid+1])
-        // {
-        //     return mid;
-        // }
         mid = start + (end - start) / 2;
     }
     return start;

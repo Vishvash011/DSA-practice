@@ -1,18 +1,18 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 int main() {
-    std::string s = "saveHello";
+    string s = "saveHelloFriends";
     for (char c : s) {
         if (isupper(c)) {
-            std::cout << std::endl;
+            cout << endl;
         }
         if (islower(c)) {
-            std::cout << static_cast<char>(toupper(c));
+            cout << static_cast<char>(toupper(c));
         } else if (isupper(c)) {
-            std::cout << static_cast<char>(tolower(c));
+            cout << static_cast<char>(tolower(c));
         } else {
-            std::cout << c;
+            cout << c;
         }
     }
 

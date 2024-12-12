@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void printPermutation(string str, int i)
+void printPermutation(string &str, int i)
 {
     //base case
     if(i >= str.length())
@@ -12,7 +12,7 @@ void printPermutation(string str, int i)
     // swapping
     for(int j = i; j < str.length(); j++)
     {
-        swap(str[i], str[j]);
+        swap(str[i], str[j] );
 
         //recursion
         printPermutation(str, i+1);
@@ -23,7 +23,7 @@ void printPermutation(string str, int i)
 }
 int main()
 {
-    string str = "abcd";
+    string str = "abc";
     int i = 0;
     printPermutation(str, i);
     return 0;
